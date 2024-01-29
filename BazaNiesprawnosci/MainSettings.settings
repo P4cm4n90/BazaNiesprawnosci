@@ -1,0 +1,102 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BazaNiesprawnosci" GeneratedClassName="MainSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TEffectFlightSafety" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Incydent&lt;/string&gt;
+  &lt;string&gt;Bez następstw&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TEffectCompletingTask" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Przerwanie startu&lt;/string&gt;
+  &lt;string&gt;Przerwanie wykonywania zadania w powietrzu&lt;/string&gt;
+  &lt;string&gt;Praca na ziemii&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TSolutionProcedure" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Wymiana częsci (agregatu)&lt;/string&gt;
+  &lt;string&gt;Naprawa częsci (agregatu)&lt;/string&gt;
+  &lt;string&gt;Resuscytacja&lt;/string&gt;
+  &lt;string&gt;Oczyszczenie złącza (filtra)&lt;/string&gt;
+  &lt;string&gt;Inne&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TItemProcedure" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Badania&lt;/string&gt;
+  &lt;string&gt;Remont&lt;/string&gt;
+  &lt;string&gt;Naprawa&lt;/string&gt;
+  &lt;string&gt;Kasacja&lt;/string&gt;
+  &lt;string&gt;Inne&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TAircraft" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;011&lt;/string&gt;
+  &lt;string&gt;012&lt;/string&gt;
+  &lt;string&gt;013&lt;/string&gt;
+  &lt;string&gt;014&lt;/string&gt;
+  &lt;string&gt;015&lt;/string&gt;
+  &lt;string&gt;016&lt;/string&gt;
+  &lt;string&gt;017&lt;/string&gt;
+  &lt;string&gt;018&lt;/string&gt;
+  &lt;string&gt;020&lt;/string&gt;
+  &lt;string&gt;021&lt;/string&gt;
+  &lt;string&gt;022&lt;/string&gt;
+  &lt;string&gt;023&lt;/string&gt;
+  &lt;string&gt;024&lt;/string&gt;
+  &lt;string&gt;025&lt;/string&gt;
+  &lt;string&gt;026&lt;/string&gt;
+  &lt;string&gt;027&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TCircumstances" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Obsługa przedlotowa&lt;/string&gt;
+  &lt;string&gt;Obsługa polotowa&lt;/string&gt;
+  &lt;string&gt;Obsługa okresowa&lt;/string&gt;
+  &lt;string&gt;Podczas lotu&lt;/string&gt;
+  &lt;string&gt;Podczas kołowania&lt;/string&gt;
+  &lt;string&gt;Po uruchomieniu silników&lt;/string&gt;
+  &lt;string&gt;Podczas próby silników&lt;/string&gt;
+  &lt;string&gt;Servicing&lt;/string&gt;
+  &lt;string&gt;Dni techniki&lt;/string&gt;
+  &lt;string&gt;Obsługa roczna&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TClassification" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;It&lt;/string&gt;
+  &lt;string&gt;Tz&lt;/string&gt;
+  &lt;string&gt;X&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TSpeciality" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Awionika&lt;/string&gt;
+  &lt;string&gt;Płatowiec i Silnik&lt;/string&gt;
+  &lt;string&gt;Urządzenia specjalne i walka elektroniczna&lt;/string&gt;
+  &lt;string&gt;Urządzenia radioelektroniczne&lt;/string&gt;
+  &lt;string&gt;Osprzęt&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="TAircraftType" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CASA C-295 M&lt;/string&gt;
+  &lt;string&gt;M28 GC&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

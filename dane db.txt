@@ -1,0 +1,66 @@
+                        TCategory (  Id INTEGER NOT NULL PRIMARY KEY, " +
+                                                                      "Name TEXT NOT NULL, " +
+                                                                      "Additional TEXT)";                        
+                        TCircumstances ( Name TEXT NOT NULL PRIMARY KEY)";
+                        
+                        TAircraft ( Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
+                                                                        "Name TEXT NOT NULL, " +
+                                                                        "SerialName TEXT, " +
+                                                                        "Type TEXT)";                        
+                        TEffectFlightSafety ( Name TEXT NOT NULL PRIMARY KEY)";                      
+                        TEffectCompletingTask ( Name TEXT NOT NULL PRIMARY KEY)";                     
+                        TSolutionProcedure ( Name TEXT NOT NULL PRIMARY KEY)";                        
+                        TItemProcedure ( Name TEXT NOT NULL PRIMARY KEY)";                      
+                        TGroundStopReason ( Name TEXT NOT NULL PRIMARY KEY)";                       
+                        TClassification ( Name TEXT NOT NULL PRIMARY KEY)";                        
+                        TSpeciality ( Name TEXT NOT NULL PRIMARY KEY)";                        
+                        TJobType ( Name TEXT NOT NULL PRIMARY KEY)";                     
+                        TItemsSubstitutes ( Sub1 TEXT NOT NULL PRIMARY KEY REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                        "Sub2 TEXT NOT NULL REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                        "Sub3 TEXT NOT NULL REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                        "Sub4 TEXT NOT NULL REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT)";
+                        
+                        TItemDesc ( "+
+                                                                    "PartNumber TEXT NOT NULL PRIMARY KEY, " +
+                                                                    "Name TEXT NOT NULL, " +
+                                                                    "Jim TEXT UNIQUE KEY, "+
+                                                                    "Category TEXT NOT NULL REFERENCES TCategory(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "Speciality TEXT REFERENCES TSpeciality(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT)";
+                        
+                        TItemDefect ( Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
+                                                                "PartNumber TEXT NOT NULL REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                "SerialNumber TEXT, "+
+                                                                "FlightHours INTEGER)";
+                        TItemNew ( Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
+                                                                "PartNumber TEXT NOT NULL REFERENCES TItemDesc(PartNumber) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                "SerialNumber TEXT, " +
+                                                                "FlightHours INTEGER)";
+                        
+                        TWorkers( Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
+                                                                "Name TEXT, "+
+                                                                "Surname TEXT NOT NULL, "+
+                                                                "JobType TEXT REFERENCES TJobType(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                "Speciality TEXT REFERENCES TSpeciality(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT)";
+                        
+                        Defect( Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "+
+                                                                 "AircraftId INTEGER NOT NULL REFERENCES TAircraft(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                 "FlightHours INTEGER, "+
+                                                                 "DateStartInt INTEGER, "+
+                                                                    "DateEndInt INTEGER, "+
+                                                                    "Circumstances TEXT REFERENCES TCircumstance(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "Symptoms TEXT, "+
+                                                                    "EffectFlightSafety INTEGER REFERENCES TEffectFlightSafety(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "EffectCompletingTask INTEGER REFERENCES TEffectCompletingTask(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "SolutionProcedure INTEGER REFERENCES TSolutionProcedure(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "Solution TEXT, "+
+                                                                    "Reason TEXT, "+
+                                                                    "ItemProcedureId INTEGER REFERENCES TItemProcedure(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "ItemNewId INTEGER REFERENCES TItemNew(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                    "ItemDefectId INTEGER REFERENCES TItemDefect(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                    "WorkerDetectId INTEGER REFERENCES TWorkers(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                    "WorkerFixId INTEGER REFERENCES TWorkers(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                    "WorkerCheckId INTEGER REFERENCES TWorkers(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT, "+
+                                                                    "GroundStopReason INTEGER REFERENCES TGroundStopReason(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "Speciality INTEGER REFERENCES TSpeciality(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "Classification INTEGER REFERENCES TClassification(Name) ON UPDATE CASCADE ON DELETE SET DEFAULT, " +
+                                                                    "WorkHours INTEGER)";

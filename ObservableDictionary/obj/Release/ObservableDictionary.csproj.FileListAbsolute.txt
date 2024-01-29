@@ -1,0 +1,4 @@
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\bin\Release\ObservableDictionary.dll
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\bin\Release\ObservableDictionary.pdb
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\obj\Release\ObservableDictionary.dll
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\obj\Release\ObservableDictionary.pdb

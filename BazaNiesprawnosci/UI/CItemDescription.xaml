@@ -1,0 +1,146 @@
+﻿<UserControl x:Class="BazaNiesprawnosci.CItemDescription"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BazaNiesprawnosci"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="500"
+             DataContext="{Binding ItemToAdd}">
+    <UserControl.Resources>
+        <local:CollectionListConverter x:Key="CollectionListConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Baza agregatów" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="dgItemData" Grid.Row="0" Grid.Column="0"
+                      AutoGenerateColumns="false"
+                      SelectedItem="{Binding ItemSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                ItemsSource="{Binding ItemsCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      >
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridRow">
+                        <EventSetter Event="MouseDoubleClick" Handler="dgItemData_DoubleClick"/>
+                    </Style>
+                </DataGrid.Resources>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="P/N" Binding="{Binding PartNumber}" />
+                    <DataGridTextColumn Header="Nazwa" Binding="{Binding Name}" />
+                    <DataGridTextColumn Header="Jim" Binding="{Binding Jim}" />
+                    <DataGridTextColumn Header="Kategoria" Binding="{Binding CategoryId}" />
+                    <DataGridTextColumn Header="Specjalność" Binding="{Binding Speciality}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Grid Grid.Column="1" Grid.Row="0" Grid.RowSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Reset Listy" Grid.Row="0" Click="ClearList"/>
+                <Button Content="Usuń"  Grid.Row="4" Click="RemoveItem"/>
+                <Button Content="Szukaj"  Grid.Row="3" Click="SearchItem"/>
+                <Button   Grid.Row="2" x:Name="bChange" Click="EditItem">
+                    <TextBlock Text="{Binding BEditText,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                </Button>
+                <Button  x:Name="bAdd" Grid.Row="1" Click="AddItem" >
+                    <TextBlock Text="{Binding BAddText,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                </Button>
+                <Button Grid.Row="5" x:Name="bReset" Click="LoadAllItems" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                    <TextBlock Text="Wczytaj wszystkie" TextWrapping="Wrap" FontSize="15" HorizontalAlignment="Center" TextAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.6*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.6*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.6*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Part number" Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox  Grid.Row="1" Grid.Column="0" FontSize="15" DataContext="{Binding ItemActive}" Text="{Binding PartNumber, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Grid.Row="0" Grid.Column="1" Content="Nazwa"  Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1"  FontSize="15" DataContext="{Binding ItemActive}" Text="{Binding Name, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Grid.Row="0" Grid.Column="2" Content="JIM"  Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="3"  FontSize="15" DataContext="{Binding ItemActive}"  Text="{Binding Jim, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="Przynalezność do kategorii/systemu" Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ComboBox Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                                  x:Name="lbCategoryAdd"       
+                          DataContext="{Binding ItemActive}"
+                                    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                                    TextElement.FontSize="15"
+                                    SelectedItem="{Binding Category,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    ItemsSource="{Binding Source={x:Static local:MainSettings.Default}, Path=TCategory}"
+                                  VerticalContentAlignment="Center"
+                                  HorizontalContentAlignment="Center">
+
+                    <ComboBox.Resources>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock TextWrapping="Wrap" Text="{Binding}"/>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.Resources>
+                </ComboBox>
+                <Label Grid.Row="2" Grid.Column="2" Content="Specjalność"  Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ComboBox Grid.Row="3" Grid.Column="3" 
+                                  x:Name="lbSpecialisation"       
+                          DataContext="{Binding ItemActive}"
+                                    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                                    TextElement.FontSize="15"
+                                    SelectedItem="{Binding Speciality,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                     ItemsSource="{Binding Source={x:Static local:MainSettings.Default}, Path=TSpeciality}"
+                                  VerticalContentAlignment="Center"
+                                  HorizontalContentAlignment="Center">
+
+                    <ComboBox.Resources>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <TextBlock TextWrapping="Wrap" Text="{Binding}"/>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.Resources>
+                </ComboBox>
+                <Label Grid.Row="4" Grid.Column="0" Content="P/N Zamiennika nr.1" Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox x:Name="tbSub1" Grid.Row="5" Grid.Column="0"  FontSize="15" DataContext="{Binding ItemActive}" Text="{Binding SubPartNumbers[0], Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextChanged="SubsChanged"/>
+                <Label Grid.Row="4" Grid.Column="1" Content="P/N Zamiennika nr.2" Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox x:Name="tbSub2" Grid.Row="5" Grid.Column="1"  FontSize="15" DataContext="{Binding ItemActive}" IsEnabled="False" Text="{Binding SubPartNumbers[1], Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextChanged="SubsChanged"/>
+                <Label Grid.Row="4" Grid.Column="2" Content="P/N Zamiennika nr.3" Padding="2,2,2,2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox x:Name="tbSub3" Grid.Row="5" Grid.Column="2"  FontSize="15" DataContext="{Binding ItemActive}" IsEnabled="False" Text="{Binding SubPartNumbers[2], Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" TextChanged="SubsChanged"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>

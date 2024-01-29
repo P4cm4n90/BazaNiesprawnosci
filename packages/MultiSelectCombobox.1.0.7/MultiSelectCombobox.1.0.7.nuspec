@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MultiSelectCombobox</id>
+    <version>1.0.7</version>
+    <title>MultiSelectCombobox</title>
+    <authors>siddhartha.baruah</authors>
+    <owners>siddhartha.baruah</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A multi select combobox for Win 8.1 apps</description>
+    <summary />
+  </metadata>
+</package>

@@ -1,0 +1,7 @@
+D:\Programowanie\BazaNiesprawnosci\Consonetest\bin\Debug\Consonetest.exe.config
+D:\Programowanie\BazaNiesprawnosci\Consonetest\bin\Debug\Consonetest.exe
+D:\Programowanie\BazaNiesprawnosci\Consonetest\bin\Debug\Consonetest.pdb
+D:\Programowanie\BazaNiesprawnosci\Consonetest\obj\Debug\Consonetest.csprojResolveAssemblyReference.cache
+D:\Programowanie\BazaNiesprawnosci\Consonetest\obj\Debug\Consonetest.csproj.CoreCompileInputs.cache
+D:\Programowanie\BazaNiesprawnosci\Consonetest\obj\Debug\Consonetest.exe
+D:\Programowanie\BazaNiesprawnosci\Consonetest\obj\Debug\Consonetest.pdb

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcInfoError" xml:space="preserve">
+    <value>Błąd. Nie udało się zmienić parametrów bazy danych.</value>
+  </data>
+  <data name="AircraftWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem niesprawności do bazy sprecyzuj samolot na którym wystąpiła niesprawność.</value>
+  </data>
+  <data name="AtaWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem niesprawności do bazy ustaw kategorie ATA do której zaliczona jest niesprawność.</value>
+  </data>
+  <data name="DataBaseCreateOk" xml:space="preserve">
+    <value>Pomyślne utworzono oraz połączono z nową bazą danych.</value>
+  </data>
+  <data name="DataBaseCreateOverwrite" xml:space="preserve">
+    <value>Błąd. Nie można nadpisać bazy danych</value>
+  </data>
+  <data name="DataBaseFixEntryOk" xml:space="preserve">
+    <value>Poprawiono wybrany wpis w bazie danych.</value>
+  </data>
+  <data name="DataBaseInitializeError" xml:space="preserve">
+    <value>Błąd. Nie udało się wczytać wybranej bazy danych/ nie wybrano bazy danych.</value>
+  </data>
+  <data name="DatabaseInitializeOk" xml:space="preserve">
+    <value>Pomyślnie połączono z bazą danych.</value>
+  </data>
+  <data name="DataBaseNoResults" xml:space="preserve">
+    <value>Nie znaleziono żadnych niesprawności o danych parametrach.</value>
+  </data>
+  <data name="DataBaseSaveError" xml:space="preserve">
+    <value>Błąd. Żeby zapisać bazę danych trzeba dodać jakieś niesprawności.</value>
+  </data>
+  <data name="DatabaseSaveOk" xml:space="preserve">
+    <value>Pomyślnie zapisano bazę danych.</value>
+  </data>
+  <data name="DateAddWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem niesprawności do bazy ustaw datę wystąpienia niesprawności.</value>
+  </data>
+  <data name="DateBaseChangeEntry" xml:space="preserve">
+    <value>Usunięto wpis z bazy danych. Dane z wpisu zostały przeniesione do okna dodawania.</value>
+  </data>
+  <data name="DateBaseCreateError" xml:space="preserve">
+    <value>Błąd. Nie udało się utworzyć bazy danych,</value>
+  </data>
+  <data name="DateBasePasswordError" xml:space="preserve">
+    <value>Błąd. Wprowadzono niepoprawne hasło.</value>
+  </data>
+  <data name="DateEndHigher" xml:space="preserve">
+    <value>Błąd. Data usprawnienia nie może być wyższa niż data wystąpienia niesprawności</value>
+  </data>
+  <data name="DateToHigher" xml:space="preserve">
+    <value>Błąd. Data końca wyszukiwania nie może być mniejsza niż data początkowa wyszukiwania.</value>
+  </data>
+  <data name="EmptyClipboard" xml:space="preserve">
+    <value>Brak wpisów w schowku.</value>
+  </data>
+  <data name="FixModeDisabled" xml:space="preserve">
+    <value>Wyłączono tryb poprawy wpisy bazy danych.</value>
+  </data>
+  <data name="FixModeEnabled" xml:space="preserve">
+    <value>Uruchomiono tryb poprawy wpisu bazy danych.</value>
+  </data>
+  <data name="NoDataToWrite" xml:space="preserve">
+    <value>Błąd. Przed dodaniem wpisy uzupełnij wszystkie pola</value>
+  </data>
+  <data name="SearchSolutionStd" xml:space="preserve">
+    <value>Tu wpisz sposób rozwiązania niesprawności</value>
+  </data>
+  <data name="SearchSymptomsStd" xml:space="preserve">
+    <value>Tu wpisz objawy niesprawności</value>
+  </data>
+  <data name="SolutionWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem niesprawności do bazy określ sposób rozwiązania niesprawności.</value>
+  </data>
+  <data name="SymptomsWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem niesprawności do bazy określ objawy niesprawności.</value>
+  </data>
+  <data name="ItemDescAddWarning" xml:space="preserve">
+    <value>Błąd. Przed dodaniem opisu agregatu wypełnij pola nazwy i pn.</value>
+  </data>
+  <data name="ItemDescRemoveWarning" xml:space="preserve">
+    <value>Błąd. Wpisz p/n agregatu który chcesz usunąć</value>
+  </data>
+  <data name="ItemDescSearchWarning" xml:space="preserve">
+    <value>Błąd. Wprowadź dane wyszukiwania.</value>
+  </data>
+  <data name="WorkerAddWarning" xml:space="preserve">
+    <value>Błąd. Wprowadź imie, nazwisko przed dodaniem specjalisty.</value>
+  </data>
+  <data name="WorkerSearchWarning" xml:space="preserve">
+    <value>Błąd. Wprowadź dane wyszukiwania.</value>
+  </data>
+  <data name="AircraftNotCompleted" xml:space="preserve">
+    <value>Zanim doda się statek powietrzny do bazy danych należy uzupełnic wszystkie pola jego opisu.</value>
+  </data>
+  <data name="CAircraftRemoveCaption" xml:space="preserve">
+    <value>Ostrzeżenie o zmianach w bazie danych.</value>
+  </data>
+  <data name="CAircraftRemoveFromDatabase" xml:space="preserve">
+    <value>Czy napewno chcesz usunąć dane informacje o statku powietrznym z bazy danych? Nacisnij tak, jeżeli chcesz usunąc zarowno dany wpis z bazy danych jak i wyników wyszukiwania. Naciśnij "Nie" jeżeli chcesz usunąc dany wpis z wyników wyszukiwania. Naciśnij anuluj w celu zaniechania czynności</value>
+  </data>
+  <data name="CAircraftSearchNoDataLoadAll" xml:space="preserve">
+    <value>Brak danych wyszukiwania. Wczytuje wszystkie statki z bazy danych.</value>
+  </data>
+  <data name="CategoryNotCompleted" xml:space="preserve">
+    <value>Przed dodaniem kategorii do bazy danych należy uzupełnic wszystkie pola jej opisu.</value>
+  </data>
+  <data name="ItemDescNoName" xml:space="preserve">
+    <value>Nie można dodać do bazy danych agregatu bez nazwy.</value>
+  </data>
+  <data name="NotFoundItemDesc" xml:space="preserve">
+    <value>Błąd. Nie znaleziono w bazie danych agregatu o podanym P/N.</value>
+  </data>
+  <data name="NotFoundItemDescInsert" xml:space="preserve">
+    <value>Nie znaleziono w bazie danych agregatu o podanym P/N. Agregat dodano do bazy danych.</value>
+  </data>
+  <data name="NotFoundWorker" xml:space="preserve">
+    <value>Błąd. Nie znaleziono pracowanika.</value>
+  </data>
+  <data name="WorkerNoName" xml:space="preserve">
+    <value>Nie można dodać do bazy danych pracownika bez nazwiska.</value>
+  </data>
+  <data name="PasswordBoxBadPassword" xml:space="preserve">
+    <value>Błąd. Wprowadzono niepoprawne hasło</value>
+  </data>
+  <data name="SearchAllFoundItemNew" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. nowo zamontowanych agregatów</value>
+  </data>
+  <data name="SearchAllNotFoundAircraft" xml:space="preserve">
+    <value>Nie znalezino żadnych danych dot. statków powietrznych</value>
+  </data>
+  <data name="SearchAllNotFoundCategory" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. kategorii.</value>
+  </data>
+  <data name="SearchAllNotFoundDefect" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. niesprawności</value>
+  </data>
+  <data name="SearchAllNotFoundItemDefect" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. uszkodzonych agregatów.</value>
+  </data>
+  <data name="SearchAllNotFoundItemDesc" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. agregatów</value>
+  </data>
+  <data name="SearchAllNotFoundWorker" xml:space="preserve">
+    <value>Nie znaleziono żadnch danych dot. specjalistów.</value>
+  </data>
+  <data name="SearchNotFoundAircraft" xml:space="preserve">
+    <value>Nie znalezion żadnych statków powietrznych o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundCategory" xml:space="preserve">
+    <value>Nie znaleziono żadnych kategorii o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundDefect" xml:space="preserve">
+    <value>Nie znaleziono żadnych niesprawności o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundItemDefect" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. agregatów o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundItemDesc" xml:space="preserve">
+    <value>Nie znaleziono agreagtów o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundItemNew" xml:space="preserve">
+    <value>Nie znaleziono żadnych danych dot. nowo zamontowanych agregatów o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundWorker" xml:space="preserve">
+    <value>Nie znaleziono żadnych pracowników o zadanych kryteriach.</value>
+  </data>
+  <data name="SearchNotFoundItem" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DefectSuccChanged" xml:space="preserve">
+    <value>Wprowadzono zmiany do niesprawności o id: </value>
+  </data>
+  <data name="ItemDescRemoveOk" xml:space="preserve">
+    <value>Usunięto opis agregatu z bazy danych</value>
+  </data>
+</root>

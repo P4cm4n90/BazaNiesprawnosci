@@ -1,0 +1,13 @@
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\bin\x86\Debug\BazaNiesprawnosci.exe.config
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\BazaNiesprawnosci.csprojResolveAssemblyReference.cache
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\PartControl.baml
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\PasswdBox.baml
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\App.baml
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\PartControl.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\PasswdBox.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\Results.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\MainWindow.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\App.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\BazaNiesprawnosci_MarkupCompile.cache
+C:\Programowanie\robota\RozkladJazdy\BazaNiesprawnosci\BazaNiesprawnosci\obj\x86\Debug\BazaNiesprawnosci_MarkupCompile.lref

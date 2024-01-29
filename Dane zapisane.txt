@@ -1,0 +1,52 @@
+<Collection>
+<Category Name="AIR CONDITIONING" Number="21"/>
+<Category Name="COMMUNICATIONS" Number="23"/>
+<Category Name="ELECTRICAL POWER" Number="24"/>
+<Category Name="EQUIPMENTS/ FURNISHING" Number="25"/>
+<Category Name="FIRE PROTECTION" Number="26"/>
+<Category Name="FLIGHT CONTROLS - GENERAL" Number="27"/>
+<Category Name="FUEL" Number="28"/>
+<Category Name="ICE AND RAIN PROTECTION" Number="30"/>
+<Category Name="INDICATING/RECORDING SYSTEMS" Number="31"/>
+<Category Name="LANDING GEAR" Number="32"/>
+<Category Name="LIGHTING" Number="33"/>
+<Category Name="NAVIGATION" Number="34"/>
+<Category Name="OXYGEN SYSTEM" Number="35"/>
+<Category Name="WATER WASTE" Number="38"/>
+<Category Name="TACTICAL COMMUNICATIONS" Number="43"/>
+<Category Name="DOORS" Number="52"/>
+<Category Name="FUSELAGE" Number="53"/>
+<Category Name="STABILIZERS" Number="55"/>
+<Category Name="WINDOWS" Number="56"/>
+<Category Name="WINGS" Number="57"/>
+<Category Name="PROPELLERS" Number="61"/>
+<Category Name="POWERPLANT" Number="71"/>
+<Category Name="ENGINE FUEL AND CONTROL" Number="73"/>
+<Category Name="AIR" Number="75"/>
+<Category Name="ENGINE CONTROLS" Number="76"/>
+<Category Name="ELECTRONIC WARFARE" Number="99"/>
+</Collection>
+
+
+<ComboBox Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
+                                  x:Name="lbCategoryAdd"       
+                                    ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                                    TextElement.FontSize="15"
+                                    DataContext="{Binding DefectAdd}"
+                                    SelectedItem="{Binding CategoryFull,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                    ItemsSource="{Binding Source={x:Static local:MainSettings.Default}, Path=TCategory}"
+                                  VerticalContentAlignment="Center"
+                                  HorizontalContentAlignment="Center">
+
+            <ComboBox.Resources>
+                <Style TargetType="ComboBox">
+                    <Setter Property="ItemTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <TextBlock TextWrapping="Wrap" Text="{Binding}"/>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>

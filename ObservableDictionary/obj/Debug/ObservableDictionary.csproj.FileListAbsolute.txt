@@ -1,0 +1,5 @@
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\bin\Debug\ObservableDictionary.dll
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\bin\Debug\ObservableDictionary.pdb
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\obj\Debug\ObservableDictionary.csprojResolveAssemblyReference.cache
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\obj\Debug\ObservableDictionary.dll
+D:\Programowanie\BazaNiesprawnosci\ObservableDictionary\obj\Debug\ObservableDictionary.pdb
